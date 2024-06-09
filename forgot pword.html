@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGET PASSWORD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            color: rgb(232, 16, 16);
+            font-style: italic;
+        }
+        h2 {
+            color: cornsilk;
+            font-style: italic;
+        }
+        input[type="email"], input[type="button"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 20%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            
+        }
+        input[type="button"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            
+        }
+        input[type="submit"]:hover {
+            background-color: #f44e4e;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            input[type="email"], input[type="submit"] {
+                width: 80%;
+            }
+        }
+        #Bt{
+            padding: 10px;
+            margin: 10px 0;
+            width: 7%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EMAIL VERIFICATION !!!</h1>
+        <form action="./sendotp.html" method="get">
+            <h2>EMAIL <input type="email" name="email" required></h2>
+            <a href="./sendotp.html"><input type="submit" value="SEND OTP" id="Bt"></a>
+        </form>
+    </header>
+</body>
+</html>

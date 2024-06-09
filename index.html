@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(./loginbg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: rgb(246, 8, 8);
+            font-style: italic;
+            font-weight: 900;
+            font-size: 3rem;
+            margin: 0;
+        }
+        h2 {
+            color: rgb(239, 11, 11);
+            font-style: inherit;
+            font-weight: bolder;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        h4 {
+            color: rgb(250, 8, 16);
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        input {
+            border-radius: 50px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        fieldset {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .password-container {
+            position: relative;
+        }
+        .password-container input {
+            padding-right: 40px;
+        }
+        .password-container .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .login-button, .forgot-password-button, .signup-button {
+            padding: 10px 20px; /* Reduced padding for smaller size */
+            background-color: white;
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            width: 100%; /* Ensure full width */
+        }
+        .login-button span, .forgot-password-button span, .signup-button span {
+            color: black;
+            position: relative;
+            z-index: 1;
+            transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+        }
+        .login-button::before, .forgot-password-button::before, .signup-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            border-radius: 6px;
+            transform: translate(-100%, -50%);
+            width: 100%;
+            height: 100%;
+            background-color: hsl(0, 97%, 51%);
+            transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+        }
+        .login-button:hover span, .forgot-password-button:hover span, .signup-button:hover span {
+            color: white;
+        }
+        .login-button:hover::before, .forgot-password-button:hover::before, .signup-button:hover::before {
+            transform: translate(0, -50%);
+        }
+        /* Styles for the signup button */
+        .signup-button {
+            color: white;
+        }
+        .signup-button span {
+            display: inline-block;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .signup-button:hover span {
+            transform: translateX(4px);
+            color: hsl(243, 80%, 62%);
+        }
+        /* End of styles for the signup button */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            h4 {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="lo">
+        <center>
+            <h1>
+                SPOTSTAR !!!
+            </h1>
+            <fieldset>
+                <h2>
+                    LOGIN...
+                </h2>
+                <div class="input-group">
+                    <input type="text" placeholder="Enter UserName">
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <a href="./welcome.html"><button class="login-button">
+                        <span>LOGIN</span>
+                    </button></a>
+                    <a href="./forgot pword.html"><button class="forgot-password-button">
+                        <span>Forget Password</span>
+                    </button></a>
+                    <a href="./signup.html"><button class="signup-button">
+                        <span>SIGN UP</span>
+                    </button></a>
+                    
+                </div>
+            </fieldset>
+        </center>
+    </div>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const password = document.getElementById('password');
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Password</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(229, 32, 32);
+            font-style: italic;
+        }
+
+        h3 {
+            color: cornsilk;
+            font-style: italic;
+        }
+
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            background-color: #6cb5f0;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: none;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #f53a53;
+        }
+
+        @media screen and (min-width: 768px) {
+            /* Adjust styles for medium screens */
+            input[type="password"],
+            input[type="button"] {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            /* Adjust styles for large screens */
+            input[type="password"],
+            input[type="button"] {
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SPOTSTAR-UPDATE PASSWORD</h1>
+        <h3><input type="password" placeholder="Password"></h3>
+        <input type="password" placeholder="Confirm Password">
+        <br><br>
+        <a href="./pword updated.html"><input type="button" value="Update"></a>
+    </header>
+</body>
+</html>

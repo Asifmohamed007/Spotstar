@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Verification</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            color: rgb(237, 34, 34);
+            font-style: italic;
+        }
+        h4 {
+            color: cornsilk;
+            font-style: italic;
+        }
+        input[type="text"], input[type="button"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 20%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 12px 24px;
+            background-color: #77b9fb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #f64756;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h4 {
+                font-size: 1rem;
+            }
+            input[type="text"], input[type="submit"] {
+                width: 80%;
+            }
+        }
+        #Bt {
+            padding: 12px 24px;
+            margin: 10px 0;
+            width: 10%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SPOTSTAR-OTP VERIFICATION</h1>
+        <form action="./updatepword.html" method="get">
+            <h4>OTP <input type="text" name="OTP" required></h4>
+            <input type="submit" value="VERIFY" id="Bt">
+        </form>
+        <br>
+        
+        <a href="./sendotp.html"><input type="submit" value="RESEND OTP" id="Bt"></a>
+    </header>
+</body>
+</html>

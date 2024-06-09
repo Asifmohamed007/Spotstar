@@ -1,0 +1,51 @@
+ #lo {
+	background-image:  url(./loginbg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	
+
+
+} 
+header{
+	background-image:  url(./loginsmallbg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	
+} 
+div {
+	background-image:  url(./sky.jpg);
+	height: 170vh;
+	background-size: cover;
+	background-position: center;
+
+
+}
+#A{
+	background-image:  url(./moviebg.avif);
+	height: 100vh;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-style: italic;
+	
+
+}
+
+#welcome{
+	background-image:  url(./welcomebg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+
+}
+#allm{
+	background-image:  url(./allbggg.jpg);
+	height: 120vh;
+	background-size: cover;
+	background-position: center;
+
+
+}
