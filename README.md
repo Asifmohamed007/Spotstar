@@ -48,7 +48,7 @@ git clone https://github.com/Asifmohamed007/Spotstar.git
 
 If you want to contact with me you can reach me at [Portfolio / Mail](https://asifmohamed-portfolio.netlify.app/).
 
-### License
+### License  <br>
 
 This project is **NOT FREE TO USE** and contains license - Asif Mohamed Mohideen.
 
